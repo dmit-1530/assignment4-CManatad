@@ -1,3 +1,123 @@
-body {
-    background-color: #eee;
+/* Larisa I put some quotes here for me to remember the functions and styling of this code, I've been forgetful recently 
+with a lot of stuff happening. -Clarence Manatad */
+
+:root /* Variable Declared */
+{
+    --inside-box-font-color: #0A91DE;
+    --inside-box-font-family: 'Nunito', sans-serif;
+    --header-font-family: 'Manrope', sans-serif;
 }
+
+body {
+    background-color: #eeeeee;
+}
+
+/* These are my codes */
+
+/* Design Codes */
+span
+{
+    color: var(--inside-box-font-color);
+}
+
+h1
+{
+    font-family: var(--inside-box-font-family);
+    font-weight: 800;
+    font-size: 1.25rem;
+    padding-bottom: .5rem;
+}
+
+p
+{
+    font-size: 1.5rem;
+    font-weight: 800;
+    border-bottom: solid 1px rgba(100, 100, 100, 0.5);
+    padding-bottom: 0.5rem; 
+    width: 10vw;
+}
+
+header /* to be able to get the column navigation bar */
+{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 1rem 0 1rem;
+    background-color: #ffffff;
+    font-family: var(--header-font-family);
+    min-height: 100vh;
+    font-size: 1.125rem;
+    color: #727B81;
+}
+
+nav .menu /* This is the first navigation menu */
+{
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem 0 0 0;
+    gap: 1.5rem;
+    
+}
+
+.menu li /* Putting flex to arrange the items */
+{
+    display: flex;
+    flex-direction: row;
+    gap: .5rem;
+    font-size: 1.125rem;
+}
+
+nav ul > li > a
+{
+    text-decoration: none;
+    color: #666f74;
+}
+
+nav ul > li > a:hover,
+nav ul > li > a:focus 
+{
+    font-weight: 800;
+}
+
+.nav-menu ul > li > a
+{
+    text-decoration: none;
+}
+
+/* Navigation Toggle Codes */
+.nav-menu /* Sub-Menu for Navigation */
+{
+    visibility: hidden;
+    border: solid .0625rem #0a91de;
+    border-radius: .4375rem;
+    padding: 1.125rem;
+    position: absolute;
+    left: 10rem;
+    bottom: 55rem;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    list-style: none;
+}
+
+.show-nav /* This is when they click the profile menu to be visible: Main function of JS is in main.js */
+{
+    visibility: visible;
+    max-width: 100vh;
+}
+
+.nav-menu > li 
+{
+    border-bottom: solid 1px rgba(100, 100, 100, 0.5);
+    padding-bottom: .5rem;
+    width: 7vw;
+}
+
+.nav-menu > li:last-child
+{
+    border-bottom: none;
+}
+
+
+

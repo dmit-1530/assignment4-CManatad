@@ -4,13 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>InsideBox</title>
+
+    <meta name = "author" content ="Assessment#4 | InsideBox">
+    <meta name = "description" content = "Showing the toggle style navigation menu in column">
+
+    <!-- Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+
+    <!-- Stylesheets -->
+    <link rel = "stylesheet" type = "text/css" href = "css/reset.css">
+    <link rel = "stylesheet" type = "text/css" href = "css/styles.css">
+
+    <!-- JavaScript -->
+    <script src="js/main.js" defer></script>
+
 </head>
 <body>
     <header>
         <h1><span>Inside</span>Box</h1>
         <p>Welcome back</p>
         <nav>
-            <!-- Create the main level and the secondary level (dropdown) navigation here -->
+            <ul class = "menu">
+                <li><img src = "img/profile.svg" alt = "Profile Icon"><a href = "#" class = "toggle-nav-menu">Profile</a><img src = "img/arrow.svg" alt = "Arrow Icon"></li>
+                <li><img src = "img/courses.svg" alt = "Setting Icon"><a href = "#">Course</a></li>
+                <li><img src = "img/bell.svg" alt = "Notification Icon"><a href = "#">Notifications</a></li>
+            </ul>
+        </nav>
+
+        <nav>
+              <ul class = "nav-menu">
+                <li><a href = "#">Dashboard</a></li>
+                <li><a href = "#">Calendar</a></li>
+                <li><a href = "#">Settings</a></li>
+                <li><a href = "#">Sign Out</a></li>
+            </ul>
         </nav>
     </header>
 </body>
