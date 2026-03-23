@@ -91,9 +91,9 @@ nav ul > li > a:focus
     border: solid .0625rem #0a91de;
     border-radius: .4375rem;
     padding: 1.125rem;
-    position: absolute;
+    position: fixed;
     left: 10rem;
-    bottom: 55rem;
+    bottom: 60rem;
     background-color: #ffffff;
     display: flex;
     flex-direction: column;
